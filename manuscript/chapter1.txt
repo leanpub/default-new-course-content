@@ -1,0 +1,161 @@
+{
+course-attempts: 1
+default-exercise-show-answers: all
+default-quiz-attempts: 1
+default-quiz-auto-submit: true
+default-quiz-show-answers: incorrect
+default-quiz-use-result: best
+default-random-choice-order: false
+default-random-question-order: false
+}
+
+# Introduction
+
+Thank you for creating a new course on Leanpub. You can get started now by deleting this default content and writing your own.
+
+Leanpub courses are written using [Markua](http://markua.com). You can read the relevant section of the Markua specification document [here](https://leanpub.com/markua/read#leanpub-auto-quizzes-and-exercises).
+
+# About MOOCs and Markua
+
+You can find some useful information on creating a course or MOOC [here](https://leanpub.com/markua/read#leanpub-auto-creating-a-course-or-mooc-from-a-markua-document).
+
+# Multiple Files vs One File
+
+You can write using one file, like this one, or using multiple files.
+
+To add a new file to your course, create a new file in the same place you'll find this file.
+
+If you're using Dropbox, GitHub or Bitbucket, create the file in the `manuscript` folder for this course. Then open the `Book.txt` file you'll find in the `manuscript` folder, and type in the name of your new file, including its file extension (like the `.txt` in `Book.txt`) **on a line by itself**. That way, the next time you create a preview of your course, the new file will be included.
+
+# Quiz Example
+
+Here is a brief example of a multiple choice question in a quiz. The correct answer is the one with an upper-case letter, in this case `B)`.
+
+{quiz, id: quiz1}
+## Quiz Title A
+
+You will note that the above title is used in the list of quizzes. If you don't add a title, your quizzes will be called Quiz 1, Quiz 2, etc. Also, you can put text above the first question in a quiz. This is useful for providing quiz instructions, as it is shown above the questions on the quiz page on Leanpub.
+
+? How many letters are in the word Markua?
+
+a) 5
+B) 6
+c) 7
+{/quiz}
+
+Here is an example of a question where the learner types their answer. You indicate the answer by typing `!` and then a space, and then the answer.
+
+{quiz, id: quiz2}
+
+? How many unique letters are in the word Markua?
+
+! 5
+{/quiz}
+
+# Exercise Example
+
+Here is an example of a multiple choice question in an exercise.
+
+{exercise, id: exercise1}
+## Exercise Title A
+
+You will note that the above title is used in the list of exercises. If you don't add a title, your exercises will be called Exercise 1, Exercise 2, etc. Also, you can put text above the first question in an exercise. This is useful for providing exercise instructions, as it is shown above the questions on the exercise page on Leanpub.
+
+? How many letters are in the word Markua?
+
+a) 5
+B) 6
+c) 7
+
+
+{/exercise}
+
+Here is an example of a question where the learner types their answer.
+
+{exercise, id: exercise2}
+? How many unique letters are in the word Markua?
+
+! 5
+{/exercise}
+
+# A Quiz with a Video
+
+Watch the video of Peter explaining Markua, and then answer the question about the video.
+
+{quiz, id: quiz3}
+# Markua Quiz
+
+Watch this video of Peter explaining Markua.
+
+![](https://www.youtube.com/watch?time_continue=1&v=VOCYL-FNbr0)
+
+? What year was that video from?
+
+a) 2012
+b) 2013
+C) 2014
+d) 2015
+
+{/quiz}
+
+# A Quiz with a Written Answer
+
+Here's a quiz where the learner writes out their answer. You can specify the maximum number of words allowed; in this case the limit is 500.
+
+{quiz, id: quiz4}
+{words: 500}
+? Why do you think the first version of the Markua spec took so long?
+
+Look at the Leanpub website and read the [pricing essay](https://leanpub.com/pricing).
+
+! Answers could include "bootstrapped startup", the spec evolving, removing HTML mapping, etc.
+
+{/quiz}
+
+# A Quiz Where the Answer is Shown "in the back of the book"
+
+You can write a question in a quiz or an exercise and indicate that you want the answer to be shown somewhere to the learner.
+
+You can actually specify where you want the answer to show up.
+
+Here's an example of how you do this:
+
+{quiz, id: quiz5}
+
+{lines: 10}
+? Write a function in Ruby that takes an argument and returns three times that argument.
+
+{answer}
+The most straightforward way to do this is like this, since the last value evaluated in the function is return\
+ed:
+
+```ruby
+def triple(y)
+  y*3
+end
+```
+
+However, you can also explicitly say `return` if you like:
+
+```ruby
+def triple(y)
+  return y*3
+end
+```
+{/answer}
+
+? Show how to evaluate 2 + 2 in irb.
+
+! `2 + 2`
+{/quiz}
+
+# More Information
+
+There's a lot more you can do when you're making courses with Markua. Here's a brief list of what else you can do:
+
+* Assign a specific number of points to each question
+* Make written or "fill in the blank" answers case-sensitive
+* Specify the maximum number of lines or pages for an answer
+* Assign more than one correct answer to a question
+* Set it so the possible answers to a multiple choice question are presented in a random order to learners
+
