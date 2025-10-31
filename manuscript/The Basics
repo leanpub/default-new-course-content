@@ -1,0 +1,243 @@
+{
+course-attempts: 1
+default-exercise-show-answers: all
+default-quiz-attempts: 1
+default-quiz-auto-submit: true
+default-quiz-show-answers: incorrect
+default-quiz-use-result: best
+default-random-choice-order: false
+default-random-question-order: false
+}
+
+# The Basics
+
+Welcome to Leanpub!
+
+Here is where you will be writing your course. This file is a real, working example of how to write a course lesson in plain text with Markua formatting (which we'll explain briefly below).
+
+You can edit the text in this file, just like if you were using Notepad or TextEdit on your computer. The difference is that you can also just click one button to preview or publish what you write as an online course that anyone in the world can buy!
+
+Leanpub courses are written using [Markua](http://markua.com). You can read the relevant section of the Markua specification document [here](https://leanpub.com/markua/read#leanpub-auto-quizzes-and-exercises).
+
+You can find some useful information on creating a course [here](https://leanpub.com/markua/read#leanpub-auto-creating-a-course-from-a-markua-document).
+
+## Unsure How to Proceed? Try Author Quickstart!
+
+Leanpub is free to use as an author, but it has so many features it can be a bit overwhelming at first.
+
+So, we have a helpful service just for you, called **Author Quickstart**.
+
+You’ll get a 1 hour, 1-on-1 onboarding session with one of Leanpub's founders, Peter Armstrong or Len Epp! This session is a Zoom call, which you schedule when signing up. In this session, you can get a guided tour of how to do everything on Leanpub, and get previewing and even publishing quickly!
+
+The best part? The $249 fee comes back to you as a **$349 service credit!**
+
+*(Yes, you read that right. The credit is $100 more than you paid. It can be used on an author membership, on marketing packages, or, if you also have a book, on author services like TranslateAI or CourseAI.)*
+
+So, it's like you get paid to have a personalized 1 hour onboarding from one of Leanpub's founders.
+
+We do this because we really want you to succeed: when you succeed, we succeed as well. Also, we love talking with Leanpub authors and showing them how to get the most out of Leanpub.
+
+To learn more about Author Quickstart, go here:
+
+https://leanpub.com/author_quickstart
+
+# Multiple Files vs One File
+
+You can write using one file or using multiple files.
+
+To add a new file to your course, create a new file in the same place you'll find this file.
+
+If you're using Dropbox, GitHub or Bitbucket, create the file in the `manuscript` folder for this course. Then open the `Book.txt` file you'll find in the `manuscript` folder, and type in the name of your new file, including its file extension (like the `.txt` in `Book.txt`) **on a line by itself**. That way, the next time you create a preview of your course, the new file will be included.
+
+# Quiz Example
+
+The information about how to write in Markua in general is further down this page. We're going to start with the bits which are specific to courses, since most authors creating courses are Leanpub authors who are already familiar with using Markua to write their books.
+
+Here is a brief example of a multiple choice question in a quiz. The correct answer is the one with an upper-case letter, in this case `B)`.
+
+{quiz, id: quiz1}
+## Quiz Title A
+
+You will note that the above title is used in the list of quizzes. If you don't add a title, your quizzes will be called Quiz 1, Quiz 2, etc. Also, you can put text above the first question in a quiz. This is useful for providing quiz instructions, as it is shown above the questions on the quiz page on Leanpub.
+
+? How many letters are in the word Markua?
+
+a) 5
+B) 6
+c) 7
+{/quiz}
+
+Here is an example of a question where the learner types their answer. You indicate the answer by typing `!` and then a space, and then the answer.
+
+{quiz, id: quiz2}
+
+? How many unique letters are in the word Markua?
+
+! 5
+{/quiz}
+
+# Exercise Example
+
+Here is an example of a multiple choice question in an exercise.
+
+{exercise, id: exercise1}
+## Exercise Title A
+
+You will note that the above title is used in the list of exercises. If you don't add a title, your exercises will be called Exercise 1, Exercise 2, etc. Also, you can put text above the first question in an exercise. This is useful for providing exercise instructions, as it is shown above the questions on the exercise page on Leanpub.
+
+? How many letters are in the word Markua?
+
+a) 5
+B) 6
+c) 7
+
+{/exercise}
+
+Here is an example of a question where the learner types their answer.
+
+{exercise, id: exercise2}
+? How many unique letters are in the word Markua?
+
+! 5
+{/exercise}
+
+# A Quiz with a Video
+
+Watch the video of Peter explaining Markua, and then answer the question about the video.
+
+{quiz, id: quiz3}
+# Markua Quiz
+
+Watch this video of Peter explaining Markua.
+
+![](https://www.youtube.com/watch?time_continue=1&v=VOCYL-FNbr0)
+
+? What year was that video from?
+
+a) 2012
+b) 2013
+C) 2014
+d) 2015
+
+{/quiz}
+
+{quiz, id: quiz4}
+# An Empty Quiz
+
+You can create quizzes and exercises without any questions and it doesn't cause an error. This lets you create placeholders for quizzes and exercises, which are potentially very useful in an in-progress course, and you don't have to worry about them cluttering up your course because we automatically filter them out for you when we generate it!
+
+{/quiz}
+
+# More Information
+
+There's a lot more you can do when you're making courses with Markua. Here's a brief list of what else you can do:
+
+* Assign a specific number of points to each question
+* Make written or "fill in the blank" answers case-sensitive
+* Specify the maximum number of lines or pages for an answer
+* Assign more than one correct answer to a question
+* Set it so the possible answers to a multiple choice question are presented in a random order to learners
+
+# How to Write on Leanpub
+
+This is a paragraph. You just write.
+
+Blank lines are used to separate paragraphs.
+
+To make *italic text* you surround it with *single* asterisks. To make **bold text** you surround it with **double** asterisks.
+
+## Previewing and publishing
+
+You can preview or publish your course by clicking a button!
+
+To preview your course:
+
+1. Click Useful Links on the left
+2. Click Preview Page
+3. Click the Create Preview button
+
+To publish your course:
+
+* Click Useful Links on the left
+* Click Publish Page
+* Click the Publish Your Course button
+
+Yes, these instructions are not just help text: they are also a course manuscript which you can preview or even publish!
+
+Once the course has been generated, you can view the latest version online to see what it looks like.
+
+**In fact, we've already created a preview of your brand new course for you, just now!**
+
+Just click on the Useful Links on the left, and click the Preview Page link to see it!
+
+(If you get to the preview page and there are no course links yet, congratulations: you're a really fast reader! In that case, just wait a minute and then reload the page to see them.)
+
+*Or, if you don't believe course publishing could possibly be this easy, just edit some of the text on this page and create your own preview from the Preview page by clicking the Create Preview button.*
+
+## Basic formatting
+
+You can start new lessons by starting a line with a # sign and a space, and then typing your lesson title, just like you can see at the top of this page, where you see # The Basics on a line by itself.
+
+You can create multiple lessons in one file, but we recommend one lesson per file. This way, your manuscript files will be easier to navigate. So, for example, this lesson is contained in the file named "The Basics" that you can see listed under the "Manuscript" menu to the left. "The Basics" is in bold in the menu, because it is the file that is currently selected.
+
+(If you start typing in here, the Manuscript menu and all the other menus will go away, so that you can relax and focus on your writing! Just click outside of this text area, and all the menus will come back.)
+
+You can make a thematic break with three asterisks, like this:
+
+* * *
+
+By the way, the above formatting is actually *all* you need to know to write a non-technical course using Markdown formatting! To write a technical course, however, you'll need to know a bit more Markdown, and learn a bit about Markua.
+
+## Markdown and Markua
+
+The dialect of Markdown used at Leanpub is called Markua.
+
+Markdown is great, but it doesn't have support for certain things that many courses need. These include index entries, crosslinks, endnotes, external code samples, etc. So, we've added these to Markdown, by extending Markdown in an open specification called Markua.
+
+The Markua spec is [here](http://markua.com).
+
+However, that spec is really long, and there are a few advanced things in the spec which aren't fully supported in Leanpub yet.
+
+So, if you want to learn how to get started writing in Markua on Leanpub, see the next lesson, **Writing in Markua**, by clicking the Writing in Markua lesson under the Manuscript menu to the left.
+
+This lesson will show you everything you need to know about how to use all the important parts of Markdown and Markua to create a technical course, including how to use...
+
+   * lists
+   * images
+   * code samples
+   * tables
+   * math
+   * resource attributes
+   * document settings
+   * asides and blurbs
+   * crosslinks
+
+Seriously, unless you already know everything about Markua, you should strongly consider looking at that lesson. It may save you a bunch of time!
+
+## Generate a preview version of your course
+
+You should probably generate a preview of this version of your course next, to save a copy of these helpful instructions. (The **Writing in Markua** lesson can come in handy!)
+
+Click on the Versions tab above to go to the Preview page, and then click Create Preview to do that.
+
+## Either read a tutorial, or just go for it!
+
+At this point, there are two good ways to proceed. You can either read a tutorial and follow along, or you can just go for it!
+
+(If you're feeling adventurous, just go for it. The tutorial is linked on the Help > Getting Started page, so you can always read it later...)
+
+### Read the tutorial...
+
+If this is your first time writing a Leanpub book or course in our Browser writing mode, after you've read the Writing in Markua we recommend you read our full tutorial [here](https://bit.ly/3lAaI3I). That tutorial will guide you through every step, including previewing versions for your review, and even publishing the first version of your course when you're ready!
+
+### ...or just go for it!
+
+Once you're ready to start writing your course, simply select all the text in this file, delete it, and then start writing!
+
+Start with # Your Lesson Name and then a blank line, and then write your first paragraph.
+
+You can create new files by clicking the + button in the menu on the left, and you can delete the other lesson files by mousing over them, clicking the settings gear icon, and clicking the red Delete File button.
+
+## Thanks for being a Leanpub author!
+
+On behalf of everyone at Leanpub, we really hope that you enjoy the experience of writing and publishing in-progress courses on Leanpub. We are a bootstrapped startup which is entirely supported by our authors, and we're really grateful that you have chosen to write your course using Leanpub...
