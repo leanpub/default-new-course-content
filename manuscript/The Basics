@@ -41,6 +41,14 @@ To learn more about Author Quickstart, go here:
 
 https://leanpub.com/author_quickstart
 
+# Multiple Files vs One File
+
+You can write using one file or using multiple files.
+
+To add a new file to your course, create a new file in the same place you'll find this file.
+
+If you're using Dropbox, GitHub or Bitbucket, create the file in the `manuscript` folder for this course. Then open the `Book.txt` file you'll find in the `manuscript` folder, and type in the name of your new file, including its file extension (like the `.txt` in `Book.txt`) **on a line by itself**. That way, the next time you create a preview of your course, the new file will be included.
+
 # Quiz Example
 
 The information about how to write in Markua in general is further down this page. We're going to start with the bits which are specific to courses, since most authors creating courses are Leanpub authors who are already familiar with using Markua to write their books.
@@ -82,7 +90,6 @@ You will note that the above title is used in the list of exercises. If you don'
 a) 5
 B) 6
 c) 7
-
 
 {/exercise}
 
@@ -130,7 +137,6 @@ There's a lot more you can do when you're making courses with Markua. Here's a b
 * Specify the maximum number of lines or pages for an answer
 * Assign more than one correct answer to a question
 * Set it so the possible answers to a multiple choice question are presented in a random order to learners
-
 
 # How to Write on Leanpub
 
